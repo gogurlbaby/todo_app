@@ -1,5 +1,6 @@
 import React from 'react'
-import { MdCancel, MdCheck, MdDeleteForever } from "react-icons/md"
+import { MdCancel, MdDeleteForever } from "react-icons/md"
+// import { MdCheck } from "react-icons/md"
 
 const TodoItem = () => {
   return (
