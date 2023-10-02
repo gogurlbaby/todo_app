@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from "react"
 
 const Form = ({addHandler}) => {
 
@@ -6,8 +6,12 @@ const Form = ({addHandler}) => {
 
   const handleForm = (e) => {
      e.preventDefault()
-     addHandler(userInput)
-     setUserInput("")
+    //Check if user does not submit an empty item
+     if (userInput.trim() !== "") {
+      addHandler(userInput)
+     }
+     // Reset the input field in either case
+      setUserInput("")
   }
 
   return (
